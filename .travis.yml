@@ -1,6 +1,4 @@
 sudo: false
-os:
-  - osx
 branches:
   only:
   - master
@@ -8,6 +6,8 @@ script:
 - echo "Nothing to build, no tests to run"
 notifications:
   irc: irc.mozilla.org#communityops
+before_deploy:
+- gem install mime-types -v 2.6.2
 deploy:
 - provider: s3
   access_key_id: AKIAJJEWDSBN7ZUUAPFQ
