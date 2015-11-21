@@ -9,6 +9,8 @@ script:
 - echo "Nothing to build, no tests to run"
 notifications:
   irc: irc.mozilla.org#communityops
+before_deploy:
+  - rvm 1.9.3 do gem install net-ssh -v 2.9.2
 deploy:
 - provider: s3
   access_key_id: AKIAJJEWDSBN7ZUUAPFQ
