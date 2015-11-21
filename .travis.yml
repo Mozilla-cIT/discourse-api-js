@@ -6,14 +6,14 @@ script:
 - echo "Nothing to build, no tests to run"
 notifications:
   irc: irc.mozilla.org#communityops
-#deploy:
-#- provider: s3
-#  access_key_id: AKIAJPLHUYJHYHPM7HYQ
-#  secret_access_key:
-#    secure: "XYbdOcVLHs1RPU7URJ2IieN8W0C+5wexr3zupNBcjgHiZLIuT7KaYKW1q6SVnJ1475Vk303YIZnKOsuxBaVC/ZidaQnczHz86+1oCWR7d6kyZoswtaIo/z4mJ/jbQH9o9oLyuMcFC001Lz+4q5JMjbB5NtV0Db1vbLO00FArGfjm+ZF2j0UrItH9IcRjyWJPVOABzsikrtZ9rAAIgXleW6mvRRjAmbzxnYMflhbcX3BZMJvf8dKp2MuyImJVY83oHO9QdkEjiQ6XG7+d6cOAefSYRWU7VV1QPF2h7H7U9mewz7pCtM5bgxFyJx1wq+diQ1IJQRcmassyyu7XjkG7JxNJjfOeFQ36QLiRD7cD9nqAdi7aV8ybecgmlzXjAP013eWsz7hZX+yYlHBchQmVzDCnqZULWdTE4h6d2VWZzehqGNgWQNwQZyVZ39uwy3prsJ4OM++JK8Vf0QRszl4mtad6lLhvcXk49OyX0NQnW2EVz2vUgXcV1stQPakXm9kx0G7r+9nwsJ+b52UM6nz9zVsAnsrLMZ3VAe0sEm9SuWPvRwyBNIfGoiBLumSguueA+wyoKTTNu3BU0iXxBNbSk2f5bPjPG7fWiaRAvd8IVmGV0UPUIfSdqLw/n41G0BYiwBOryK+8fzacu0BSYHTvAPd8VV2alFfjVQc60ZzA/cM="
-#  bucket: mozfest-schedule-production-s3bucket-te3i6be2idig
-#  skip_cleanup: true
-#  detect_encoding: true
-#  on:
-#    repo: mozilla-cit/discourse-api-js
-#    branch: master
+deploy:
+- provider: s3
+  access_key_id: AKIAJJEWDSBN7ZUUAPFQ
+  secret_access_key:
+    secure: "U/EzdD8cwPzisUl2B/sZ6EIv1VdPyymbtJqs6ZwubyBYsJtlbcIvwfUEbO/zxY8LCQQNTzHMdU7UeCS7a+NB2RhrkL5y+gWTXi1w0Tt9s9FObKQY/yZrqP1CvV5ViTDRBBG6KsSPEtl5Cd9ExwUBDZzS3ZXVb2vf5awzAJ+zVh6YVoHwtkoSZ0weu/Z+IuBmRJuIsol6LKoWB8krhlmWHWQlCy0I2kVftvp1AkMuHkd9iHWUb/vGR3i2hZm616AlhKqn5NNK4xXjKhPa8y7VKW990RIJ+QA3qDlnbDGaC3XnHnha3yXS8MQyT6LTzy7VhfpTjLyNzC27WeUFqMgLeZ3Bbf2MorZ9LkIi6AOr2uP88CJHDJ2AdnVOjJyfNhHGbKOaU0yvcfnq5ndgxUm2zskaqcZUGCaheAQ32iSsM6L3d9IYFU05Ybhrj2Kpp8HiLSoaVcFTaUxuHuIpzIyCvZKu2Y33gt2gd12t3vWJzPAFzIvtJ2gKg630a6pv982OWs2qO6mKOK4VIs1zkD5QdMGJ+Tc8LuHnEmj3EnBEkM2WR212kvoQXAdUqhQwLNKdcHDSAzsOnMmDlzWf1doltm8aEjPavuS0SyRqb8mYo3MEIJXB4QnVL4TOV+fD/YyGSOOJCDSo6+Lz7rEwxW3aHasOtvZnwfQiqgp3p8epbyI="
+  bucket: ops-blog
+  skip_cleanup: true
+  detect_encoding: true
+  on:
+    repo: mozilla-cit/discourse-api-js
+    branch: master
