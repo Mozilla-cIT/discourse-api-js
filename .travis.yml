@@ -13,7 +13,7 @@ before_deploy:
 - gem install mime-types -v 2.6.2
 deploy:
 - provider: s3
-  access_key_id: AKIAINEOGQFBBZPB6RQQ
+  access_key_id: "AKIAINEOGQFBBZPB6RQQ"
   secret_access_key:
     secure: "uwVwvK1fCBSdURYFkpI9N8yua+2KlhIInNYArLtIwYW3XSDY9pSby/9k+zd25cprzOBe29hLrTz+S36HQ5t2yHah6wnTLzTiG/Emnhp7uWvuVVbEYQzw71IvMft/Ag2N5jSoZj5b8JpDe06l38OO1JvVLy4USGXk+2niy/B0p60ebNlggfKJtd1qFuU2es5SOXq4OCVKmUF43LYOp37qJIFp69F5bFh+H4apSlJyc5Nkd8auYwghqNwZWkL99gA1B1NyJ6yDbn9DKgKZwWtRfDZh5Ha20aQXkppZ7Q/I9KFX/+qFXixWPM8/ZxRX5ROxjxqjA/pJI2Ex2neiqAyoZovB/Vp8ULXwBCNQ1daZjUd3oapC+PB0p0yc/BT2LlzsZGdWcsBlxesDegm7rINZxTlEv6PhQusgXJwCQekyIAwzBoQzH0k61jlDf5zQqGs2mvtexj/3AljAfh1bMZaZiQbtqAyIVJa0alKWaUvQ9eugkpil2chTnbyPO8BskNiYjhmeT85OHhEQ2dB/g3qFcxL0KGa4RAcUVuTzGI101cEdev6/DH86ejf8hC4A4fXVNBkRSEKKSeBfex5cVIa8JrJerhvWuLNHMJRVuX/CjMPK1hCNLcFH9aCyx+sJ7zDMhAkBu4jzYU5ImD89Pae43hZiaTpRWDR3OD6nCZMTT9U="
   bucket: ops-blog
